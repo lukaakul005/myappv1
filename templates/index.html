@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}VUVID{% endblock %}
+{% block head %}
+	<link rel="stylesheet" href="static/css/index.css">
+	<style type="text/css">
+
+	</style>
+
+{% endblock %}
+
+
+{% block body %}
+	<div class="login-wrapper-background">
+		<div class="center-tab">
+			<div class="icon-index">
+				<img class="imglogo" src="{{ url_for('static', filename='images/logo/log.ico') }}">
+			</div>
+
+			<div class="chose-option">
+				<div class="login-button-index"><a class="login100-form-btn" href="{{ url_for('login')}}">LOGIN</a></div >
+				<div class="register-button-index"><a class="login100-form-btn" href="{{ url_for('register')}}">REGISTER</a></div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+	</div>
+
+
+{% endblock %}

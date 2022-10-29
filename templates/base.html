@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% block title %}{% endblock %}</title>
+	{% block head %}{% endblock%}
+	<style type="text/css">
+		body{
+			font-family: 'Roboto';
+			background: linear-gradient(0.25turn, #00074E, #008FFF, #0043AE, #000536);
+		}
+		.important-message{
+			color: red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+{% block body %}{% endblock %}
+
+</body>
+</html>

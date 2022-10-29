@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}VUVID{% endblock %}
+{% block head %}
+	<link rel="stylesheet" href="static/css/register.css">
+	<style type="text/css">
+		input{
+			background-color: transparent;
+		}
+		.uptext{
+			font-size: 30px;
+			text-align: center;
+		}
+		.center-console {
+			border: 5px solid white;
+			margin: auto;
+			width: 300px;
+					
+			border-radius: 20px;
+			margin-top: 250px;
+			padding: 10px 50px 50px 50px;
+		}
+		input{
+			border:0;
+			display: block;
+			margin : 0 auto;
+			padding: 5px;
+			box-sizing: border-box;
+			border-bottom:1px solid #eee;
+			box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+			border-radius:8px;
+
+		}
+
+
+
+
+		.email-input{
+			margin-bottom: 10px;
+		}
+
+
+
+
+
+		button{
+			display: block;
+			margin : 0 auto;
+			padding: 10px;
+		}
+
+
+		.redirect-register{
+			text-align: center;
+			margin-top: 2px;
+			font-size: 13px;
+		}
+		.login-button{
+			transition: all 1s ease;
+			margin-top: 5px;
+			background-color: transparent;
+			border: transparent;
+			font-size: 25px;
+			color: white;
+		}
+		.login-button:hover {
+			letter-spacing: 4px;
+
+		}
+
+	</style>
+{% endblock %}
+
+
+{% block body %}
+	<div class="main-login-body">
+		<form class="center-console" method="POST" action="/register">
+			<div class="uptext">
+				<img class="imglogo" src="{{ url_for('static', filename='images/logo/log.ico') }}">
+				
+				
+			</div>
+			<div class="data-input">
+
+				<div class="email-input">
+					<input type="email" name="email_in" value="Email">
+				</div>
+				<div class="password-input">
+					<input type="password" name="password_in" value="Password">
+				</div>
+				
+			</div>
+			<div class="data-send">
+				<button class="login-button" type="submit">REGISTER</button>
+				
+			</div>
+			<div class="redirect-register">
+				<label><a href="{{ url_for('login')}}">Already have an account?</a></label>
+			</div>
+		</form>
+		<p class="important-message">{{message}}</p>
+
+		
+	</div>
+
+
+{% endblock %}

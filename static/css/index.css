@@ -1,0 +1,50 @@
+.icon-index{
+	margin-left: 27px;
+}
+.center-tab {
+	margin: auto;
+	width: 300px;
+			
+	border-radius: 20px;
+	margin-top: 250px;
+	padding: 10px 50px 50px 50px;
+}
+.chose-option{
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+}
+.login-button-index{
+	transition: all 1s ease;
+	width: 100%;
+	border-radius: 10px;
+	background-color: transparent;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.register-button-index{
+	border-radius: 10px;
+	background-color: transparent;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.login-button-index:hover > .login100-form-btn{
+	letter-spacing: 5px;
+			
+}
+
+.register-button-index:hover > .login100-form-btn{
+	letter-spacing: 5px;
+
+}
+.login100-form-btn{
+	transition: all 1s ease;
+	font-family: 'Roboto';
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+
+}
